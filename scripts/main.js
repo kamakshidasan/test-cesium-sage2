@@ -2,9 +2,7 @@ var container, renderer, scene, calc_camera,
   mUniforms, modelMaterial, mTextureBuffer,
   plane2Material, planeScreen2;
 
-
 // function that initializes the cesium display
-
 function init(self){
 
   viewer = new Cesium.Viewer('cesiumContainer', {
@@ -14,7 +12,7 @@ function init(self){
       baseLayerPicker : false
   });
 
-  // capa con el mapa
+  // layer with the map
   var layers = viewer.scene.imageryLayers;
 
   var imagen = layers.addImageryProvider(new Cesium.SingleTileImageryProvider({
